@@ -108,6 +108,17 @@ border: none;
     max-width: 850px;
     height: auto;
 }
+/* 須修正 */
+.svg02{
+    position: relative;
+}
+.svg02{
+    position: absolute;
+    width: 360px;
+    left: -222px;
+    top: 589px;
+}
+/* 須修正 */
 .po01{
     position: absolute;
     right: 200px;
@@ -125,10 +136,10 @@ border: none;
 .po03{
     position: absolute;
     top: 1105px;
-    right: 50px;
+    right: 0%;
     z-index: -1;
     overflow:hidden;
-    margin-right: -8%;
+    /* clip:rect(0px 30px 0px 0px); */
     
 }
 .po04{
@@ -140,7 +151,7 @@ border: none;
 .po05{
     position: absolute;
     top: 2640px;
-    left: 50px;
+    left: 5%;
     z-index: -1;
 }
 
@@ -179,12 +190,7 @@ border: none;
   
 
 }
-.svg02{
-    position: absolute;
-    width: 360px;
-    left: -222px;
-    top: 589px;
-}
+
 .title{
     text-align: center;
     margin: auto;
@@ -353,6 +359,7 @@ h4{
     padding-top: 32px;
     padding-left: 32px;
     padding-top: 48px;
+    padding-right: 32px;
     border-radius: 15px;
 }
 .avater{
@@ -369,7 +376,8 @@ h4{
     word-break: break-word;
     font-weight: 700;
     color: #221E1F;
-    padding-bottom: 24px;
+    /* padding-bottom: 24px; */
+    height: 121px;
     border-bottom: solid 1px black;
     margin-bottom: 24px;
 
@@ -379,7 +387,78 @@ h4{
 }
 
 .name{
-    text-align: left;
+    font-size: 16pt;
+    font-weight: 800;
     
 }
+.flex06{
+    display: flex;
+    justify-content: space-between;
+}
+.star{
+    /* border:solid 1px black ; */
+    height: 100%;
+}
+.company{
+    font-size: 16px;
+    font-weight: 900;
+    color: #221E1F;
+    margin-bottom: 8px;
+}
+.flex07{
+    display: flex;
+    margin-bottom: 24px;
+}
 
+.title04{
+    text-align: center;
+    margin: auto;
+    font-family: normal Noto Sans TC;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 104px;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #DDDDDD;
+    margin-right: 8px;
+
+}
+.circle_a{
+    margin-right: 8px;
+    width: 16px;
+    height: 10px;
+    border-radius: 35%;
+    background-color: #FFD153;
+    
+}
+.flex08{
+    /* margin: auto; */
+    display: flex;
+    /* border: solid 1px black; */
+    justify-content: center;
+    margin-bottom: 100px;
+    
+}
+.imgfooter{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+.footer{
+    position: relative;
+}
+
+.title05{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    margin: auto;
+    font-family: normal Noto Sans TC;
+    font-size: 32px;
+    font-weight: 900;
+    /* margin-bottom: 70px; */
+}
